@@ -1,0 +1,186 @@
+body {
+  background-color: var(--color-white);
+  color: var(--color-dark-jungle);
+  font-family: "Roboto", sans-serif;
+  font-weight: var(--font-weight-bold);
+  font-style: normal;
+  overflow: hidden;
+}
+
+.contenedor {
+  display: flex;
+  flex: 100%;
+}
+
+.menu {
+  background-color: var(--color-white);
+  color: var(--color-dark-jungle);
+  display: flex;
+  flex: 20%;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.contenido {
+  background-color: var(--color-platinum);
+  color: var(--color-dark-jungle);
+  display: flex;
+  flex: 75%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contenido img {
+  height: 300px;
+}
+.contenido h1 {
+  font-size: var(--font-size-Xlarge);
+  font-weight: var(--font-weight-light);
+  margin: 10px;
+}
+.contenido p {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-light);
+  height: 50px;
+  width: 450px;
+  text-align: center;
+  margin: 10px;
+}
+
+.primera,
+.boton {
+  border: 1px solid var(--color-gray);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex-direction: row;
+}
+.primera i {
+  color: var(--color-gray);
+}
+.boton i {
+  color: var(--color-gray);
+}
+
+.primera:hover {
+  background-color: var(--color-platinum);
+}
+.boton:hover {
+  background-color: var(--color-platinum);
+}
+
+.imgcontacto {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  transition: transform 0.1s;
+  padding: 0px 8px;
+}
+
+.imgcontacto:hover {
+  transform: scale(1.2);
+}
+
+.botones {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+  align-self: center;
+}
+
+.texto {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 10px;
+}
+.texto2 {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+.texto h2 {
+  margin: 0;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-medium);
+}
+.texto2 h2 {
+  margin: 0;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-medium);
+}
+
+.texto p {
+  margin: 0;
+  color: var(--color-gray);
+  font-size: var(--font-size-small);
+}
+
+.chat {
+  border: 1px solid var(--color-gray);
+  padding: 40px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nuevo-chat {
+  display: flex;
+  background-color: var(--color-blue-bell);
+  color: var(--color-white);
+  font-size: var(--font-size-large);
+  white-space: nowrap;
+  padding: 15px 55px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nuevo-chat:hover {
+  background-color: var(--color-soap);
+}
+
+.nuevo-chat:focus {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+}
+
+.texto2 p {
+  margin: 0;
+  color: var(--color-dark-jungle);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-light);
+}
+
+.boton .imgcontacto {
+  width: 60px;
+  height: 60px;
+}
+:root {
+  --color-white: #fff;
+  --color-platinum: #e8ebe4;
+  --color-gray: #bec1bb;
+  --color-blue-bell: #a491d2;
+  --color-soap: #cdc3e6;
+  --color-pale-lavender: #d4dcff;
+  --color-dark-jungle: #1b1f21;
+  --color-outer-space: #444749;
+  --color-old-silver: #828485;
+  --font-size-small: 10px;
+  --font-size-medium: 14px;
+  --font-size-large: 16px;
+  --font-size-Xlarge: 45px;
+  --font-weight-light: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
